@@ -33,7 +33,7 @@ int authenticate(int *bassword_user_entered ,int *pin) {
 void  confirm(){
      int pin;
     bassword_activation(&pin);
-    printf("blease confirm bassword to use this visa \n");
+    printf("please confirm bassword to use this visa \n");
     int bassword_user_entered;
     scanf("%i" , &bassword_user_entered);
     int ret;
