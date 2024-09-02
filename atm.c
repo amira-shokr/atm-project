@@ -8,7 +8,7 @@
 
 int balance =0;
 void bassword_activation(int *pin){
-    printf("please enter your bassword of 4 digits to activate this visa : \n");
+    printf("please enter your password of 4 digits to activate this visa : \n");
     scanf("%i" , pin);
   for(int i=0 ; i<10 ; i++){
       printf("...................................................................................\n");
@@ -24,7 +24,7 @@ int authenticate(int *bassword_user_entered ,int *pin) {
      return 1;
     }
     else{
-          printf("bassword you entered is  not correct  ...  \n");
+          printf("password you entered is  not correct  ...  \n");
 
      return -1;
     }
@@ -33,7 +33,7 @@ int authenticate(int *bassword_user_entered ,int *pin) {
 void  confirm(){
      int pin;
     bassword_activation(&pin);
-    printf("please confirm bassword to use this visa \n");
+    printf("please confirm password to use this visa \n");
     int bassword_user_entered;
     scanf("%i" , &bassword_user_entered);
     int ret;
